@@ -148,7 +148,6 @@ namespace WojOS2
                                 { 
                                     Sys.Power.Shutdown();
                                     Console.WriteLine("Shutting down. Goodbye!");
-
                                 }
                                 if (terminaltekst == "reboot") 
                                 { 
