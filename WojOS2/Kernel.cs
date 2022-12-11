@@ -82,7 +82,7 @@ namespace WojOS2
                     uint myszyr = Sys.MouseManager.Y;
 
         
-                    myszx = Convert.ToInt32(myszxr);
+                    myszx = Convert.ToInt32(myszxr); //mouse
                     myszy = Convert.ToInt32(myszyr);
                     if (myszx < 0)
                     {
@@ -99,6 +99,7 @@ namespace WojOS2
                     if (myszy > 720)
                     {
                         myszy = 10;
+
                     }
                     pen.Color = System.Drawing.Color.Purple;
                     canvas.DrawFilledCircle(pen, myszx, myszy, 3);
@@ -146,7 +147,8 @@ namespace WojOS2
                                 if (terminaltekst == "shutdown") 
                                 { 
                                     Sys.Power.Shutdown();
-                                    Console.WriteLine("Goodbye!");
+                                    Console.WriteLine("Shutting down. Goodbye!");
+
                                 }
                                 if (terminaltekst == "reboot") 
                                 { 
